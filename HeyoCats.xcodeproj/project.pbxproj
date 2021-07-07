@@ -14,6 +14,7 @@
 		CDCDD34F26962797007EC6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */; };
 		CDCDD35A26962797007EC6F2 /* HeyoCatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD35926962797007EC6F2 /* HeyoCatsTests.swift */; };
 		CDCDD36526962797007EC6F2 /* HeyoCatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD36426962797007EC6F2 /* HeyoCatsUITests.swift */; };
+		CDCDD37726962D4B007EC6F2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD37626962D4B007EC6F2 /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CDCDD36026962797007EC6F2 /* HeyoCatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyoCatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCDD36426962797007EC6F2 /* HeyoCatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyoCatsUITests.swift; sourceTree = "<group>"; };
 		CDCDD36626962797007EC6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCDD37626962D4B007EC6F2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCDD34B26962797007EC6F2 /* Assets.xcassets */,
+				CDCDD37626962D4B007EC6F2 /* Color.xcassets */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				CDCDD34F26962797007EC6F2 /* LaunchScreen.storyboard in Resources */,
 				CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */,
+				CDCDD37726962D4B007EC6F2 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
