@@ -97,11 +97,9 @@
 		CDCDD34126962795007EC6F2 /* HeyoCats */ = {
 			isa = PBXGroup;
 			children = (
-				CDCDD34226962795007EC6F2 /* AppDelegate.swift */,
-				CDCDD34426962795007EC6F2 /* SceneDelegate.swift */,
-				CDCDD34626962795007EC6F2 /* ViewController.swift */,
-				CDCDD34B26962797007EC6F2 /* Assets.xcassets */,
-				CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */,
+				CDCDD37426962AE8007EC6F2 /* app */,
+				CDCDD37226962ACE007EC6F2 /* main */,
+				CDCDD37326962AD8007EC6F2 /* assets */,
 				CDCDD35026962797007EC6F2 /* Info.plist */,
 			);
 			path = HeyoCats;
@@ -123,6 +121,32 @@
 				CDCDD36626962797007EC6F2 /* Info.plist */,
 			);
 			path = HeyoCatsUITests;
+			sourceTree = "<group>";
+		};
+		CDCDD37226962ACE007EC6F2 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD34626962795007EC6F2 /* ViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CDCDD37326962AD8007EC6F2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD34B26962797007EC6F2 /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CDCDD37426962AE8007EC6F2 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD34226962795007EC6F2 /* AppDelegate.swift */,
+				CDCDD34426962795007EC6F2 /* SceneDelegate.swift */,
+				CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
