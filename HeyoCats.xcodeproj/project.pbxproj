@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34226962795007EC6F2 /* AppDelegate.swift */; };
+		CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34426962795007EC6F2 /* SceneDelegate.swift */; };
+		CDCDD34726962795007EC6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34626962795007EC6F2 /* ViewController.swift */; };
+		CDCDD34A26962795007EC6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34826962795007EC6F2 /* Main.storyboard */; };
+		CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34B26962797007EC6F2 /* Assets.xcassets */; };
+		CDCDD34F26962797007EC6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */; };
+		CDCDD35A26962797007EC6F2 /* HeyoCatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD35926962797007EC6F2 /* HeyoCatsTests.swift */; };
+		CDCDD36526962797007EC6F2 /* HeyoCatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD36426962797007EC6F2 /* HeyoCatsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDCDD35626962797007EC6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCDD33726962795007EC6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCDD33E26962795007EC6F2;
+			remoteInfo = HeyoCats;
+		};
+		CDCDD36126962797007EC6F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCDD33726962795007EC6F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCDD33E26962795007EC6F2;
+			remoteInfo = HeyoCats;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDCDD33F26962795007EC6F2 /* HeyoCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyoCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCDD34226962795007EC6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDCDD34426962795007EC6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CDCDD34626962795007EC6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDCDD34926962795007EC6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDCDD34B26962797007EC6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDCDD34E26962797007EC6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDCDD35026962797007EC6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCDD35526962797007EC6F2 /* HeyoCatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyoCatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCDD35926962797007EC6F2 /* HeyoCatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyoCatsTests.swift; sourceTree = "<group>"; };
+		CDCDD35B26962797007EC6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCDD36026962797007EC6F2 /* HeyoCatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyoCatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCDD36426962797007EC6F2 /* HeyoCatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyoCatsUITests.swift; sourceTree = "<group>"; };
+		CDCDD36626962797007EC6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDCDD33C26962795007EC6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35226962797007EC6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35D26962797007EC6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDCDD33626962795007EC6F2 = {
+			isa = PBXGroup;
+			children = (
+				CDCDD34126962795007EC6F2 /* HeyoCats */,
+				CDCDD35826962797007EC6F2 /* HeyoCatsTests */,
+				CDCDD36326962797007EC6F2 /* HeyoCatsUITests */,
+				CDCDD34026962795007EC6F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDCDD34026962795007EC6F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD33F26962795007EC6F2 /* HeyoCats.app */,
+				CDCDD35526962797007EC6F2 /* HeyoCatsTests.xctest */,
+				CDCDD36026962797007EC6F2 /* HeyoCatsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCDD34126962795007EC6F2 /* HeyoCats */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD34226962795007EC6F2 /* AppDelegate.swift */,
+				CDCDD34426962795007EC6F2 /* SceneDelegate.swift */,
+				CDCDD34626962795007EC6F2 /* ViewController.swift */,
+				CDCDD34826962795007EC6F2 /* Main.storyboard */,
+				CDCDD34B26962797007EC6F2 /* Assets.xcassets */,
+				CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */,
+				CDCDD35026962797007EC6F2 /* Info.plist */,
+			);
+			path = HeyoCats;
+			sourceTree = "<group>";
+		};
+		CDCDD35826962797007EC6F2 /* HeyoCatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD35926962797007EC6F2 /* HeyoCatsTests.swift */,
+				CDCDD35B26962797007EC6F2 /* Info.plist */,
+			);
+			path = HeyoCatsTests;
+			sourceTree = "<group>";
+		};
+		CDCDD36326962797007EC6F2 /* HeyoCatsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCDD36426962797007EC6F2 /* HeyoCatsUITests.swift */,
+				CDCDD36626962797007EC6F2 /* Info.plist */,
+			);
+			path = HeyoCatsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDCDD33E26962795007EC6F2 /* HeyoCats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCDD36926962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCats" */;
+			buildPhases = (
+				CDCDD33B26962795007EC6F2 /* Sources */,
+				CDCDD33C26962795007EC6F2 /* Frameworks */,
+				CDCDD33D26962795007EC6F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeyoCats;
+			productName = HeyoCats;
+			productReference = CDCDD33F26962795007EC6F2 /* HeyoCats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDCDD35426962797007EC6F2 /* HeyoCatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCDD36C26962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCatsTests" */;
+			buildPhases = (
+				CDCDD35126962797007EC6F2 /* Sources */,
+				CDCDD35226962797007EC6F2 /* Frameworks */,
+				CDCDD35326962797007EC6F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCDD35726962797007EC6F2 /* PBXTargetDependency */,
+			);
+			name = HeyoCatsTests;
+			productName = HeyoCatsTests;
+			productReference = CDCDD35526962797007EC6F2 /* HeyoCatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDCDD35F26962797007EC6F2 /* HeyoCatsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCDD36F26962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCatsUITests" */;
+			buildPhases = (
+				CDCDD35C26962797007EC6F2 /* Sources */,
+				CDCDD35D26962797007EC6F2 /* Frameworks */,
+				CDCDD35E26962797007EC6F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCDD36226962797007EC6F2 /* PBXTargetDependency */,
+			);
+			name = HeyoCatsUITests;
+			productName = HeyoCatsUITests;
+			productReference = CDCDD36026962797007EC6F2 /* HeyoCatsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDCDD33726962795007EC6F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CDCDD33E26962795007EC6F2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CDCDD35426962797007EC6F2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CDCDD33E26962795007EC6F2;
+					};
+					CDCDD35F26962797007EC6F2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CDCDD33E26962795007EC6F2;
+					};
+				};
+			};
+			buildConfigurationList = CDCDD33A26962795007EC6F2 /* Build configuration list for PBXProject "HeyoCats" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDCDD33626962795007EC6F2;
+			productRefGroup = CDCDD34026962795007EC6F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDCDD33E26962795007EC6F2 /* HeyoCats */,
+				CDCDD35426962797007EC6F2 /* HeyoCatsTests */,
+				CDCDD35F26962797007EC6F2 /* HeyoCatsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDCDD33D26962795007EC6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCDD34F26962797007EC6F2 /* LaunchScreen.storyboard in Resources */,
+				CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */,
+				CDCDD34A26962795007EC6F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35326962797007EC6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35E26962797007EC6F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDCDD33B26962795007EC6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCDD34726962795007EC6F2 /* ViewController.swift in Sources */,
+				CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */,
+				CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35126962797007EC6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCDD35A26962797007EC6F2 /* HeyoCatsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCDD35C26962797007EC6F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCDD36526962797007EC6F2 /* HeyoCatsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDCDD35726962797007EC6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCDD33E26962795007EC6F2 /* HeyoCats */;
+			targetProxy = CDCDD35626962797007EC6F2 /* PBXContainerItemProxy */;
+		};
+		CDCDD36226962797007EC6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCDD33E26962795007EC6F2 /* HeyoCats */;
+			targetProxy = CDCDD36126962797007EC6F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDCDD34826962795007EC6F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCDD34926962795007EC6F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDCDD34D26962797007EC6F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCDD34E26962797007EC6F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDCDD36726962797007EC6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDCDD36826962797007EC6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCDD36A26962797007EC6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCats/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDCDD36B26962797007EC6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCats/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDCDD36D26962797007EC6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCatsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeyoCats.app/HeyoCats";
+			};
+			name = Debug;
+		};
+		CDCDD36E26962797007EC6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCatsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeyoCats.app/HeyoCats";
+			};
+			name = Release;
+		};
+		CDCDD37026962797007EC6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCatsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCatsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeyoCats;
+			};
+			name = Debug;
+		};
+		CDCDD37126962797007EC6F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = HeyoCatsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.HeyoCatsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeyoCats;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDCDD33A26962795007EC6F2 /* Build configuration list for PBXProject "HeyoCats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCDD36726962797007EC6F2 /* Debug */,
+				CDCDD36826962797007EC6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCDD36926962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCDD36A26962797007EC6F2 /* Debug */,
+				CDCDD36B26962797007EC6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCDD36C26962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCDD36D26962797007EC6F2 /* Debug */,
+				CDCDD36E26962797007EC6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCDD36F26962797007EC6F2 /* Build configuration list for PBXNativeTarget "HeyoCatsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCDD37026962797007EC6F2 /* Debug */,
+				CDCDD37126962797007EC6F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDCDD33726962795007EC6F2 /* Project object */;
+}
