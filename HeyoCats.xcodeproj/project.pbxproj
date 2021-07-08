@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CDB93C9726972A9400A4D5A6 /* AllCatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */; };
+		CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */; };
 		CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34226962795007EC6F2 /* AppDelegate.swift */; };
 		CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34426962795007EC6F2 /* SceneDelegate.swift */; };
 		CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34B26962797007EC6F2 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsTableViewCell.swift; sourceTree = "<group>"; };
+		CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsILikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDCDD33F26962795007EC6F2 /* HeyoCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyoCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCDD34226962795007EC6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCDD34426962795007EC6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		CDB93C9526972A6100A4D5A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				CDCDD37F26963CA6007EC6F2 /* AllCatsViewController.swift in Sources */,
 				CDCDD37A26963BAD007EC6F2 /* TabBarController.swift in Sources */,
 				CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */,
+				CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */,
 				CDB93C9726972A9400A4D5A6 /* AllCatsTableViewCell.swift in Sources */,
 				CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */,
 			);
