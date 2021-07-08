@@ -20,15 +20,16 @@ class TabBarController: UITabBarController {
     }
     
     private func setupViewControllers() {
+        let insects = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         let homeViewController = AllCatsViewController()
         homeViewController.tabBarItem.title = "All Cats"
         homeViewController.tabBarItem.image = UIImage(named: "cat_icon")
-        homeViewController.tabBarItem.imageInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        homeViewController.tabBarItem.imageInsets = insects
         
         let favouritesViewController = CatsILikeViewController()
         favouritesViewController.tabBarItem.title = "Cats I Like"
         favouritesViewController.tabBarItem.image = UIImage(named: "heart_tab")
-        favouritesViewController.tabBarItem.imageInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        favouritesViewController.tabBarItem.imageInsets = insects
     
         viewControllers = [homeViewController, favouritesViewController ]
     }
@@ -45,6 +46,12 @@ class TabBarController: UITabBarController {
         self.tabBar.tintColor = UIColor(named: "primary_text")
         self.tabBar.unselectedItemTintColor = UIColor(named: "unselected_tab")
         self.tabBar.barTintColor = .white
+        configureTabBarFontWith(size: 13)
+    }
+    
+    private func configureTabBarFontWith(size: CGFloat) {
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: size)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: size)], for: .selected)
     }
     
 }
