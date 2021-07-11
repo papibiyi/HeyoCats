@@ -29,6 +29,15 @@
 		CDBB6D61269B9C9A0038709E /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB7269748C700A4D5A6 /* CatModel.swift */; };
 		CDBB6D64269B9CC20038709E /* CatsPersistenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D63269B9CC20038709E /* CatsPersistenseManager.swift */; };
 		CDBB6D65269B9CC70038709E /* CatsPersistenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D63269B9CC20038709E /* CatsPersistenseManager.swift */; };
+		CDBB6D67269BA1560038709E /* AllCatsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D66269BA1560038709E /* AllCatsViewModelTest.swift */; };
+		CDBB6D69269BA3CF0038709E /* AllCatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB22697443C00A4D5A6 /* AllCatsViewModel.swift */; };
+		CDBB6D6A269BA5A50038709E /* AllCatsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB42697447C00A4D5A6 /* AllCatsWebService.swift */; };
+		CDBB6D6B269BA7350038709E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9B26973DDB00A4D5A6 /* NetworkManager.swift */; };
+		CDBB6D6C269BA7450038709E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9D26973DEF00A4D5A6 /* NetworkConstants.swift */; };
+		CDBB6D6D269BA7600038709E /* CustomHttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA42697404400A4D5A6 /* CustomHttpError.swift */; };
+		CDBB6D6E269BA7650038709E /* UnknowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA52697404400A4D5A6 /* UnknowError.swift */; };
+		CDBB6D6F269BA7690038709E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA62697404400A4D5A6 /* RequestType.swift */; };
+		CDBB6D70269BA7770038709E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA92697404400A4D5A6 /* Decoder.swift */; };
 		CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34226962795007EC6F2 /* AppDelegate.swift */; };
 		CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34426962795007EC6F2 /* SceneDelegate.swift */; };
 		CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34B26962797007EC6F2 /* Assets.xcassets */; };
@@ -79,6 +88,7 @@
 		CDBB6D5B269B91E50038709E /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		CDBB6D5D269B9BBC0038709E /* PersistingManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistingManagerTest.swift; sourceTree = "<group>"; };
 		CDBB6D63269B9CC20038709E /* CatsPersistenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPersistenseManager.swift; sourceTree = "<group>"; };
+		CDBB6D66269BA1560038709E /* AllCatsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsViewModelTest.swift; sourceTree = "<group>"; };
 		CDCDD33F26962795007EC6F2 /* HeyoCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyoCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCDD34226962795007EC6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCDD34426962795007EC6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +269,7 @@
 				CDCDD35926962797007EC6F2 /* HeyoCatsTests.swift */,
 				CDCDD35B26962797007EC6F2 /* Info.plist */,
 				CDBB6D5D269B9BBC0038709E /* PersistingManagerTest.swift */,
+				CDBB6D66269BA1560038709E /* AllCatsViewModelTest.swift */,
 			);
 			path = HeyoCatsTests;
 			sourceTree = "<group>";
@@ -501,10 +512,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBB6D6C269BA7450038709E /* NetworkConstants.swift in Sources */,
+				CDBB6D6E269BA7650038709E /* UnknowError.swift in Sources */,
+				CDBB6D6D269BA7600038709E /* CustomHttpError.swift in Sources */,
 				CDCDD35A26962797007EC6F2 /* HeyoCatsTests.swift in Sources */,
+				CDBB6D69269BA3CF0038709E /* AllCatsViewModel.swift in Sources */,
+				CDBB6D67269BA1560038709E /* AllCatsViewModelTest.swift in Sources */,
 				CDBB6D61269B9C9A0038709E /* CatModel.swift in Sources */,
+				CDBB6D6B269BA7350038709E /* NetworkManager.swift in Sources */,
 				CDBB6D65269B9CC70038709E /* CatsPersistenseManager.swift in Sources */,
+				CDBB6D6A269BA5A50038709E /* AllCatsWebService.swift in Sources */,
 				CDBB6D5E269B9BBC0038709E /* PersistingManagerTest.swift in Sources */,
+				CDBB6D6F269BA7690038709E /* RequestType.swift in Sources */,
+				CDBB6D70269BA7770038709E /* Decoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

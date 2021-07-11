@@ -9,9 +9,30 @@ import Foundation
 import Combine
 
 protocol AllCatsViewModelActions {
+    var webService: CatsWebService { get }
+    var cats: [Cat] {get set}
+    
+    
     func getCats()
     func isFavotite(row: Int) -> Bool
     func saveCat(row: Int) -> Bool
+}
+
+extension AllCatsViewModelActions {
+    
+    func isFavotite(row: Int) -> Bool {
+        CatsPersistenceManager.shared.load().first(where: {$0.id == self.cats[row].id}) == nil ? false : true
+    }
+    
+    func saveCat(row: Int) -> Bool {
+        if isFavotite(row: row) {
+            CatsPersistenceManager.shared.remove(cat: cats[row])
+            return false
+        }else {
+            CatsPersistenceManager.shared.save(cat: cats[row])
+            return true
+        }
+    }
 }
 
 class AllCatsViewModel: ObservableObject, AllCatsViewModelActions {
@@ -32,20 +53,6 @@ class AllCatsViewModel: ObservableObject, AllCatsViewModelActions {
             case .failure:
                 break
             }
-        }
-    }
-    
-    func isFavotite(row: Int) -> Bool {
-        CatsPersistenceManager.shared.load().first(where: {$0.id == self.cats[row].id}) == nil ? false : true
-    }
-    
-    func saveCat(row: Int) -> Bool {
-        if isFavotite(row: row) {
-            CatsPersistenceManager.shared.remove(cat: cats[row])
-            return false
-        }else {
-            CatsPersistenceManager.shared.save(cat: cats[row])
-            return true
         }
     }
 }
