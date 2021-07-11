@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD9E39CF269BAAB700062DA0 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = CD9E39CE269BAAB700062DA0 /* Readme.md */; };
+		CD9E39D6269BAB0500062DA0 /* sc1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E39D1269BAB0500062DA0 /* sc1.png */; };
+		CD9E39D7269BAB0500062DA0 /* sc3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E39D2269BAB0500062DA0 /* sc3.png */; };
+		CD9E39D8269BAB0500062DA0 /* sc5.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E39D3269BAB0500062DA0 /* sc5.png */; };
+		CD9E39D9269BAB0500062DA0 /* sc4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E39D4269BAB0500062DA0 /* sc4.png */; };
+		CD9E39DA269BAB0500062DA0 /* sc2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9E39D5269BAB0500062DA0 /* sc2.png */; };
 		CDB93C9726972A9400A4D5A6 /* AllCatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */; };
 		CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */; };
 		CDB93C9C26973DDB00A4D5A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9B26973DDB00A4D5A6 /* NetworkManager.swift */; };
@@ -68,6 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD9E39CE269BAAB700062DA0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		CD9E39D1269BAB0500062DA0 /* sc1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc1.png; sourceTree = "<group>"; };
+		CD9E39D2269BAB0500062DA0 /* sc3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc3.png; sourceTree = "<group>"; };
+		CD9E39D3269BAB0500062DA0 /* sc5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc5.png; sourceTree = "<group>"; };
+		CD9E39D4269BAB0500062DA0 /* sc4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc4.png; sourceTree = "<group>"; };
+		CD9E39D5269BAB0500062DA0 /* sc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc2.png; sourceTree = "<group>"; };
 		CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsTableViewCell.swift; sourceTree = "<group>"; };
 		CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsILikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDB93C9B26973DDB00A4D5A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -132,6 +144,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD9E39D0269BAAD600062DA0 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				CD9E39D1269BAB0500062DA0 /* sc1.png */,
+				CD9E39D5269BAB0500062DA0 /* sc2.png */,
+				CD9E39D2269BAB0500062DA0 /* sc3.png */,
+				CD9E39D4269BAB0500062DA0 /* sc4.png */,
+				CD9E39D3269BAB0500062DA0 /* sc5.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		CDB93C9226972A4C00A4D5A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +259,8 @@
 		CDCDD33626962795007EC6F2 = {
 			isa = PBXGroup;
 			children = (
+				CD9E39D0269BAAD600062DA0 /* Screenshots */,
+				CD9E39CE269BAAB700062DA0 /* Readme.md */,
 				CDCDD34126962795007EC6F2 /* HeyoCats */,
 				CDCDD35826962797007EC6F2 /* HeyoCatsTests */,
 				CDCDD36326962797007EC6F2 /* HeyoCatsUITests */,
@@ -455,6 +481,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCDD34F26962797007EC6F2 /* LaunchScreen.storyboard in Resources */,
+				CD9E39D6269BAB0500062DA0 /* sc1.png in Resources */,
+				CD9E39DA269BAB0500062DA0 /* sc2.png in Resources */,
+				CD9E39D9269BAB0500062DA0 /* sc4.png in Resources */,
+				CD9E39D7269BAB0500062DA0 /* sc3.png in Resources */,
+				CD9E39D8269BAB0500062DA0 /* sc5.png in Resources */,
 				CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */,
 				CDCDD37726962D4B007EC6F2 /* Color.xcassets in Resources */,
 			);
@@ -498,6 +529,7 @@
 				CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */,
 				CDB93CAF2697404400A4D5A6 /* ImageCacheManager.swift in Sources */,
 				CDBB6D58269B5D8D0038709E /* AllCatsView.swift in Sources */,
+				CD9E39CF269BAAB700062DA0 /* Readme.md in Sources */,
 				CDB93C9C26973DDB00A4D5A6 /* NetworkManager.swift in Sources */,
 				CDBB6D5A269B85030038709E /* UITableView+Extension.swift in Sources */,
 				CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */,
