@@ -20,8 +20,8 @@ class TabBarController: UITabBarController {
     }
     
     private func setupViewControllers() {
-        let insects = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-        let homeViewController = AllCatsViewController()
+        let insects = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        let homeViewController = AllCatsViewController(viewModel: AllCatsViewModel(webService: AllCatsWebService()))
         homeViewController.tabBarItem.title = "All Cats"
         homeViewController.tabBarItem.image = UIImage(named: "cat_icon")
         homeViewController.tabBarItem.imageInsets = insects
