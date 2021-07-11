@@ -8,7 +8,13 @@
 import Foundation
 import Combine
 
-class AllCatsViewModel: ObservableObject {
+protocol AllCatsViewModelActions {
+    func getCats()
+    func isFavotite(row: Int) -> Bool
+    func saveCat(row: Int) -> Bool
+}
+
+class AllCatsViewModel: ObservableObject, AllCatsViewModelActions {
     let webService: CatsWebService
     
     @Published var cats = [Cat]()
@@ -42,5 +48,4 @@ class AllCatsViewModel: ObservableObject {
             return true
         }
     }
-
 }
