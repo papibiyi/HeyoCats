@@ -37,12 +37,37 @@ class AllCatsTableViewCell: UITableViewCell {
         didPressLike?()
     }
     
-    let catImageView: UIImageView = {
-        let view = UIImageView()
+    let activityIndicator: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.startAnimating()
+        view.hidesWhenStopped = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    lazy var leftView: UIView = {
+        let view = UIView()
         view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
         view.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        view.addSubview(activityIndicator)
+        view.addSubview(catImageView)
+        catImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        catImageView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        catImageView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        catImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    let catImageView: UIImageView = {
+        let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -64,7 +89,7 @@ class AllCatsTableViewCell: UITableViewCell {
     }()
     
     private lazy var hStack: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [catImageView, catNameLabel, likeImageView])
+        let view = UIStackView(arrangedSubviews: [leftView, catNameLabel, likeImageView])
         view.spacing = 15
         view.alignment = .center
         view.distribution = .fillProportionally
@@ -81,6 +106,7 @@ class AllCatsTableViewCell: UITableViewCell {
             DispatchQueue.main.async {[weak self] in
                 self?.catImageView.alpha = 0
                 UIView.animate(withDuration: 0.3) {
+                    self?.activityIndicator.stopAnimating()
                     self?.catImageView.image = UIImage(data: data as Data)
                     self?.catImageView.alpha = 1
                 }
