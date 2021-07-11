@@ -9,19 +9,38 @@ import UIKit
 
 class CatsILikeCollectionViewCell: UICollectionViewCell {
     
+    let id = UUID()
+    static let reuseId = "\(CatsILikeCollectionViewCell.self)"
+    
+    var didPressLike: (() -> ())?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        setupTapAction()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        catImageView.image = nil
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func setupTapAction() {
+        likeImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didPressLikeImage)))
+    }
+
+    @objc private func didPressLikeImage() {
+        didPressLike?()
+    }
+    
     let catImageView: UIImageView = {
         let view = UIImageView()
-        view.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        view.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        view.layer.cornerRadius = 10
+        view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -34,7 +53,7 @@ class CatsILikeCollectionViewCell: UICollectionViewCell {
     }()
     
     let likeImageView: UIImageView = {
-        let view = UIImageView()
+        let view = UIImageView(image: UIImage(named: "like_filled"))
         view.isUserInteractionEnabled = true
         view.heightAnchor.constraint(equalToConstant: 18).isActive = true
         view.widthAnchor.constraint(equalToConstant: 18).isActive = true
@@ -54,15 +73,29 @@ class CatsILikeCollectionViewCell: UICollectionViewCell {
     
     private lazy var vStack: UIStackView = {
         let view = UIStackView(arrangedSubviews: [catImageView, hStack])
+        view.axis = .vertical
         view.spacing = 5
         view.alignment = .fill
-        view.distribution = .fillProportionally
+        view.distribution = .fill
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    func configureCell() {
-        
+    func loadImageFrom(url: String) {
+        ImageCacheManager.fetchImageData(with: id.uuidString, from: url, completion: { data in
+            DispatchQueue.main.async {[weak self] in
+                self?.catImageView.alpha = 0
+                UIView.animate(withDuration: 0.3) {
+                    self?.catImageView.image = UIImage(data: data as Data)
+                    self?.catImageView.alpha = 1
+                }
+            }
+        })
+    }
+
+    
+    func configureCell(with data: Cat) {
+        catNameLabel.text = data.name
     }
     
     private func setupView() {
