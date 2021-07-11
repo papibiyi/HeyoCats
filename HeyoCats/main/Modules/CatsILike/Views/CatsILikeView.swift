@@ -32,13 +32,34 @@ class CatsILikeView: UIView {
         return view
     }()
     
+    let catsILikeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Cats I Like"
+        label.textColor = UIColor(named: "primary_text")
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.backgroundColor = UIColor(named: "background")
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        return label
+    }()
+    
+    lazy var stackView: UIStackView = {
+        let view = UIStackView(arrangedSubviews: [catsILikeLabel, collectionView])
+        view.axis = .vertical
+        view.spacing = 25
+        view.alignment = .fill
+        view.distribution = .fill
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private func setupView() {
         backgroundColor = .white
-        addSubview(collectionView)
-        collectionView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        collectionView.leftAnchor.constraint(equalTo: leftAnchor, constant: 25).isActive = true
-        collectionView.rightAnchor.constraint(equalTo: rightAnchor, constant: -25).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+        addSubview(stackView)
+        stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+        stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 25).isActive = true
+        stackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -25).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
     }
 
 }

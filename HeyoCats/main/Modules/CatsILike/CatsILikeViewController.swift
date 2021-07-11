@@ -29,7 +29,7 @@ class CatsILikeViewController: GenericViewController<CatsILikeView> {
     }
 }
 
-extension CatsILikeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension CatsILikeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatsILikeCollectionViewCell.reuseId, for: indexPath) as! CatsILikeCollectionViewCell
         cell.configureCell(with: cats[indexPath.row])
@@ -45,6 +45,7 @@ extension CatsILikeViewController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        contentView.catsILikeLabel.isHidden = cats.isEmpty
         cats.isEmpty ? contentView.collectionView.setEmptyView(.noData(message: "You don't like any cat\n😿", image: nil)) : contentView.collectionView.removeEmptyView()
         return cats.count
     }
