@@ -9,6 +9,8 @@ Project was done in:
 #### Technical Details
 * Used MVVM
 * Created all view programatically
+* Persited favoutires with FileManager
+
 
 ### Improvements that could have been made 
 
