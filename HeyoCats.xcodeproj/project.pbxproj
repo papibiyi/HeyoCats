@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD42B413269B3962001EE03A /* CatsPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42B412269B3962001EE03A /* CatsPersistenceManager.swift */; };
 		CDB93C9726972A9400A4D5A6 /* AllCatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */; };
 		CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */; };
 		CDB93C9C26973DDB00A4D5A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93C9B26973DDB00A4D5A6 /* NetworkManager.swift */; };
@@ -17,6 +18,14 @@
 		CDB93CAE2697404400A4D5A6 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA62697404400A4D5A6 /* RequestType.swift */; };
 		CDB93CAF2697404400A4D5A6 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA82697404400A4D5A6 /* ImageCacheManager.swift */; };
 		CDB93CB02697404400A4D5A6 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CA92697404400A4D5A6 /* Decoder.swift */; };
+		CDB93CB32697443C00A4D5A6 /* AllCatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB22697443C00A4D5A6 /* AllCatsViewModel.swift */; };
+		CDB93CB52697447C00A4D5A6 /* AllCatsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB42697447C00A4D5A6 /* AllCatsWebService.swift */; };
+		CDB93CB8269748C700A4D5A6 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB93CB7269748C700A4D5A6 /* CatModel.swift */; };
+		CDBB6D54269B5C680038709E /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D53269B5C680038709E /* GenericViewController.swift */; };
+		CDBB6D56269B5C960038709E /* CatsILikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D55269B5C960038709E /* CatsILikeView.swift */; };
+		CDBB6D58269B5D8D0038709E /* AllCatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D57269B5D8D0038709E /* AllCatsView.swift */; };
+		CDBB6D5A269B85030038709E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D59269B85020038709E /* UITableView+Extension.swift */; };
+		CDBB6D5C269B91E50038709E /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB6D5B269B91E50038709E /* UICollectionView+Extension.swift */; };
 		CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34226962795007EC6F2 /* AppDelegate.swift */; };
 		CDCDD34526962795007EC6F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDD34426962795007EC6F2 /* SceneDelegate.swift */; };
 		CDCDD34C26962797007EC6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCDD34B26962797007EC6F2 /* Assets.xcassets */; };
@@ -47,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD42B412269B3962001EE03A /* CatsPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CatsPersistenceManager.swift; path = ../../../../../../../../../../CatsPersistenceManager.swift; sourceTree = "<group>"; };
 		CDB93C9626972A9400A4D5A6 /* AllCatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsTableViewCell.swift; sourceTree = "<group>"; };
 		CDB93C9826973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsILikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDB93C9B26973DDB00A4D5A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -57,6 +67,14 @@
 		CDB93CA62697404400A4D5A6 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		CDB93CA82697404400A4D5A6 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		CDB93CA92697404400A4D5A6 /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		CDB93CB22697443C00A4D5A6 /* AllCatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsViewModel.swift; sourceTree = "<group>"; };
+		CDB93CB42697447C00A4D5A6 /* AllCatsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsWebService.swift; sourceTree = "<group>"; };
+		CDB93CB7269748C700A4D5A6 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		CDBB6D53269B5C680038709E /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		CDBB6D55269B5C960038709E /* CatsILikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsILikeView.swift; sourceTree = "<group>"; };
+		CDBB6D57269B5D8D0038709E /* AllCatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsView.swift; sourceTree = "<group>"; };
+		CDBB6D59269B85020038709E /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		CDBB6D5B269B91E50038709E /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		CDCDD33F26962795007EC6F2 /* HeyoCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyoCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCDD34226962795007EC6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCDD34426962795007EC6F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB93C9326972A5500A4D5A6 /* Cells */,
+				CDBB6D57269B5D8D0038709E /* AllCatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB93C9526972A6100A4D5A6 /* Cells */,
+				CDBB6D55269B5C960038709E /* CatsILikeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				CDB93CA22697404400A4D5A6 /* UIViewController+Extension.swift */,
+				CDBB6D59269B85020038709E /* UITableView+Extension.swift */,
+				CDBB6D5B269B91E50038709E /* UICollectionView+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -182,8 +204,18 @@
 			children = (
 				CDB93CA82697404400A4D5A6 /* ImageCacheManager.swift */,
 				CDB93CA92697404400A4D5A6 /* Decoder.swift */,
+				CD42B412269B3962001EE03A /* CatsPersistenceManager.swift */,
+				CDBB6D53269B5C680038709E /* GenericViewController.swift */,
 			);
 			path = class;
+			sourceTree = "<group>";
+		};
+		CDB93CB62697472E00A4D5A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDB93CB7269748C700A4D5A6 /* CatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CDCDD33626962795007EC6F2 = {
@@ -238,6 +270,7 @@
 		CDCDD37226962ACE007EC6F2 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				CDB93CB62697472E00A4D5A6 /* Model */,
 				CDB93C9F2697403900A4D5A6 /* Custom */,
 				CDB93C9A26973DC500A4D5A6 /* Network */,
 				CDCDD37B26963C80007EC6F2 /* Modules */,
@@ -287,6 +320,8 @@
 			children = (
 				CDB93C9226972A4C00A4D5A6 /* Views */,
 				CDCDD37E26963CA6007EC6F2 /* AllCatsViewController.swift */,
+				CDB93CB22697443C00A4D5A6 /* AllCatsViewModel.swift */,
+				CDB93CB42697447C00A4D5A6 /* AllCatsWebService.swift */,
 			);
 			path = AllCats;
 			sourceTree = "<group>";
@@ -430,16 +465,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBB6D5C269B91E50038709E /* UICollectionView+Extension.swift in Sources */,
+				CDB93CB8269748C700A4D5A6 /* CatModel.swift in Sources */,
 				CDB93CAD2697404400A4D5A6 /* UnknowError.swift in Sources */,
+				CDBB6D54269B5C680038709E /* GenericViewController.swift in Sources */,
+				CDB93CB32697443C00A4D5A6 /* AllCatsViewModel.swift in Sources */,
+				CDBB6D56269B5C960038709E /* CatsILikeView.swift in Sources */,
 				CDB93C9E26973DEF00A4D5A6 /* NetworkConstants.swift in Sources */,
 				CDB93CAE2697404400A4D5A6 /* RequestType.swift in Sources */,
 				CDCDD38126963CB3007EC6F2 /* CatsILikeViewController.swift in Sources */,
 				CDB93CAC2697404400A4D5A6 /* CustomHttpError.swift in Sources */,
 				CDCDD37F26963CA6007EC6F2 /* AllCatsViewController.swift in Sources */,
 				CDCDD37A26963BAD007EC6F2 /* TabBarController.swift in Sources */,
+				CDB93CB52697447C00A4D5A6 /* AllCatsWebService.swift in Sources */,
+				CD42B413269B3962001EE03A /* CatsPersistenceManager.swift in Sources */,
 				CDCDD34326962795007EC6F2 /* AppDelegate.swift in Sources */,
 				CDB93CAF2697404400A4D5A6 /* ImageCacheManager.swift in Sources */,
+				CDBB6D58269B5D8D0038709E /* AllCatsView.swift in Sources */,
 				CDB93C9C26973DDB00A4D5A6 /* NetworkManager.swift in Sources */,
+				CDBB6D5A269B85030038709E /* UITableView+Extension.swift in Sources */,
 				CDB93C9926973BD700A4D5A6 /* CatsILikeCollectionViewCell.swift in Sources */,
 				CDB93C9726972A9400A4D5A6 /* AllCatsTableViewCell.swift in Sources */,
 				CDB93CAB2697404400A4D5A6 /* UIViewController+Extension.swift in Sources */,
@@ -613,7 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34XCG4MM64;
+				DEVELOPMENT_TEAM = U8P389C873;
 				INFOPLIST_FILE = HeyoCats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -632,7 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34XCG4MM64;
+				DEVELOPMENT_TEAM = U8P389C873;
 				INFOPLIST_FILE = HeyoCats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
