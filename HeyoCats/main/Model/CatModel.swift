@@ -7,14 +7,18 @@
 
 import Foundation
 
-struct Cat: Codable {
+struct Cat: Codable, Equatable {
     let id: String?
     let image: Image?
     let name: String?
 }
 
 // MARK: - Image
-struct Image: Codable {
+struct Image: Codable, Equatable {
     let id: String?
     let url: String?
+}
+
+struct Favourites: Codable {
+    let cats: [Cat]
 }
